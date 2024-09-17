@@ -1,0 +1,142 @@
+/* Overall container settings */
+.container {
+  display: flex;
+  justify-content: space-between; /* Aligns the logo to the left and nav items to the right */
+  align-items: center;
+  padding: 0 20px; /* Adds some space between the container edges */
+  max-width: 100%;
+  width: 100%;
+  background-color: #023e8a;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  z-index: 1000; /* Ensures navbar stays on top of other content */position: fixed; /* or relative */
+  top: 0;
+  left: 0;
+
+}
+
+/* Styling for the logo */
+.Logo {
+  height: 120px; /* Set appropriate height for logo */
+  width: auto; /* Maintain the aspect ratio */
+  margin-left: 5px;
+}
+
+/* Flex container for the nav links */
+.nav {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Space between nav and the right edge */
+}
+
+/* Individual nav items */
+.nav-item {
+  margin-left: 20px; /* Space between nav items */
+}
+
+.disabled-link {
+  color: #f8f8f8;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+  border-radius: 25px; 
+  padding: 10px 15px; /* Padding around the links */
+}
+
+.disabled-link:hover {
+  color: rgb(75, 69, 69);
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(83, 241, 255, 0.6);
+  background-color: #0077b6;
+}
+
+/* Hides the default Bootstrap dropdown caret (down arrow) */
+.custom-dropdown-toggle::after {
+  display: none !important;
+}
+
+.custom-dropdown-toggle {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+/* Dropdown menu box styling (background matches navbar) */
+.dropdown-menu {
+  background-color: #333333;
+  border: none; /* Remove border if desired */
+  border-radius: 5px; /* Smooth edges */
+  padding: 10px;
+}
+
+/* Dropdown menu item styling */
+.dropdown-item {
+  color: #f8f8f8 !important; /* Default color for dropdown items */
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+  border-radius: 25px;
+}
+
+/* Hover effect for dropdown items */
+.dropdown-item:hover {
+  color: rgb(75, 69, 69) !important;
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(231, 255, 83, 0.6);
+  background-color: #e7ff53;
+}
+
+/* Icon size adjustment */
+.custom-size {
+  font-size: 24px;
+  padding: 0 10px;
+  transition: transform 0.3s ease; /* Smooth transition for scaling effect */
+}
+
+/* Increase size on hover */
+.custom-size:hover {
+  transform: scale(1.2); /* Increase size by 20% */
+}
+
+/* Responsive Design */
+
+/* Medium screens (tablet or small laptops) */
+@media (max-width: 992px) {
+  .nav {
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .Logo {
+    height: 50px; /* Adjust logo size for smaller screens */
+  }
+}
+
+/* Small screens (mobile phones) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack the logo and the nav vertically */
+    height: auto;
+    padding: 10px;
+  }
+
+  .nav {
+    justify-content: center; /* Center the nav links */
+    margin-top: 10px;
+  }
+
+  .Logo {
+    margin: 0 auto; /* Center the logo */
+    height: 40px; /* Smaller logo on mobile */
+  }
+
+  .nav-item {
+    margin-left: 10px; /* Reduce spacing between nav items */
+  }
+
+  .disabled-link {
+    padding: 8px 10px; /* Smaller padding on mobile */
+  }
+
+  .custom-size {
+    font-size: 30px; /* Adjust icon size for mobile */
+  }
+}

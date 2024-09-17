@@ -1,0 +1,8 @@
+.stepper-control {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    align-items: center; /* Center buttons vertically */
+    gap: 1rem; /* Optional: Adds space between the buttons */
+    margin-top: 2rem; /* Optional: Adds space above the button group */
+  }
+  

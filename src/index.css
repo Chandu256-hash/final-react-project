@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+/* General body text */
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700; /* Adjust weight as needed */
+  }
+  
+  /* Paragraphs */
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; /* Normal weight */
+  }
+  
+  /* Italics */
+  .italic-text {
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+  }
+  
+  /* Custom class example */
+  .custom-heading {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+  }
+  

@@ -1,0 +1,77 @@
+/* Wrapper for the entire stepper */
+.stepper-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  /* Connect the steps with lines or arrows */
+  .step-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex: 1; /* Each step takes equal space */
+  }
+  
+  /* Line/Arrow between steps */
+  .step-container:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 25px; /* Align the line vertically with the step circle */
+    left: 50%;
+    right: -50%;
+    height: 2px;
+    background-color: #d3d3d3;
+    z-index: -1;
+    transition: all 0.3s ease;
+  }
+  
+  .step-container.completed:not(:last-child)::after {
+    background-color: #28a745; /* Green when step is completed */
+  }
+  
+  /* Circle styling */
+  .step-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid #d3d3d3;
+    color: #333;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    z-index: 1; /* Make sure the circle is above the line */
+  }
+  
+  /* Active step */
+  .step-circle.active {
+    border-color: #0077b6;
+    color: #0077b6;
+  }
+  
+  /* Completed step */
+  .step-circle.completed {
+    background-color: #28a745;
+    color: white;
+    border-color: #28a745;
+  }
+  
+  /* Step label styling */
+  .step-label {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #333;
+  }
+  
+  /* Arrow instead of lines (optional) */
+  .step-container.completed:not(:last-child)::after {
+    background: linear-gradient(to right, #28a745 0%, #28a745 50%, #d3d3d3 50%, #d3d3d3 100%);
+  }
+  

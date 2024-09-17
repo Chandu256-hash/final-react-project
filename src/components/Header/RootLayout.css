@@ -1,0 +1,6 @@
+/* Ensure that the main content area has enough space below the navbar */
+.main-content {
+    padding-top: 70px; /* Adjust this value based on the height of your navbar */
+    margin: 0;
+  }
+  

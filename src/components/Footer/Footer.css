@@ -1,0 +1,103 @@
+.footer{
+        left: 0%;
+        bottom: 0%;
+        width: 100%;
+        display: flex; 
+        top: auto;
+}
+
+.mail{
+    display: flex;
+}
+
+
+
+.disabled-link {
+  color: #f8f8f8;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
+  border-radius: 25px; 
+}
+
+.disabled-link:hover {
+  color: rgb(75, 69, 69);
+  transform: scale(1.1);
+  box-shadow: 10 10 20px rgba(231, 255, 83, 0.6);
+  background-color: #e7ff53;
+}
+
+
+
+
+.footer-left{
+
+    padding: 20px 50px 50px 50px;
+    height:200px;
+    width: 1150px;
+    background-color: #82001a;
+}
+
+.contact-info{
+   text-align: center;
+        color: #ffff;
+}
+.address{
+    color: #ffff;
+    color: #ffc140;
+}
+
+.addressinfo{
+    color: #d2d3d9;
+}
+
+.footer-right{
+
+    height: 200px;
+    width: 600px;
+    background-color:#1a1a1a;
+    justify-content:space-between;
+}
+
+
+.footer-middle{
+   padding: 15px 15px 15px 15px;
+    height: 200px;
+    width: 800px;
+    background-color:#262626;
+    color:#ffffff;
+    
+}
+
+
+  .custom-icon {
+    font-size: 30px; 
+    margin-right: 10px; 
+
+  }
+  
+  .phone-number {
+    font-size: 16px; /* Adjust size as needed */
+  }
+  
+
+  .social-media-icons i{
+        
+        margin-right: 10px; 
+        padding-top: 5px;
+      }
+  
+
+      .fa-brands{
+        color: white;
+      }
+
+
+      .fa-brands:hover{
+        color: #d8d6d6;
+      }
+
+      .fa-solid:hover{
+        color: #d8d6d6;
+      }
+
+      
